@@ -11,6 +11,7 @@
 		3FBB9B942938FF47000EAE59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB9B932938FF47000EAE59 /* ViewController.swift */; };
 		3FBB9B962938FF48000EAE59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBB9B952938FF48000EAE59 /* Assets.xcassets */; };
 		3FBB9B992938FF48000EAE59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBB9B972938FF48000EAE59 /* Main.storyboard */; };
+		3FBB9BA22938FF90000EAE59 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 3FBB9BA12938FF90000EAE59 /* Sparkle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		3FBB9B952938FF48000EAE59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FBB9B982938FF48000EAE59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FBB9B9A2938FF48000EAE59 /* SparkleTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SparkleTest.entitlements; sourceTree = "<group>"; };
+		3FBB9BA3293902E4000EAE59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBB9BA22938FF90000EAE59 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +55,7 @@
 		3FBB9B902938FF47000EAE59 /* SparkleTest */ = {
 			isa = PBXGroup;
 			children = (
+				3FBB9BA3293902E4000EAE59 /* Info.plist */,
 				3FBB9B912938FF47000EAE59 /* AppDelegate.swift */,
 				3FBB9B932938FF47000EAE59 /* ViewController.swift */,
 				3FBB9B952938FF48000EAE59 /* Assets.xcassets */,
@@ -77,6 +81,9 @@
 			dependencies = (
 			);
 			name = SparkleTest;
+			packageProductDependencies = (
+				3FBB9BA12938FF90000EAE59 /* Sparkle */,
+			);
 			productName = SparkleTest;
 			productReference = 3FBB9B8E2938FF47000EAE59 /* SparkleTest.app */;
 			productType = "com.apple.product-type.application";
@@ -105,6 +112,9 @@
 				Base,
 			);
 			mainGroup = 3FBB9B852938FF47000EAE59;
+			packageReferences = (
+				3FBB9BA02938FF90000EAE59 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			productRefGroup = 3FBB9B8F2938FF47000EAE59 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -271,10 +281,11 @@
 				CODE_SIGN_ENTITLEMENTS = SparkleTest/SparkleTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0.9;
 				DEVELOPMENT_TEAM = UT29XKSDN8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SparkleTest/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -282,7 +293,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = advance.financial.system.sample.SparkleTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -298,10 +309,11 @@
 				CODE_SIGN_ENTITLEMENTS = SparkleTest/SparkleTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0.9;
 				DEVELOPMENT_TEAM = UT29XKSDN8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SparkleTest/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -309,7 +321,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = advance.financial.system.sample.SparkleTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3FBB9BA02938FF90000EAE59 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				branch = 2.x;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3FBB9BA12938FF90000EAE59 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FBB9BA02938FF90000EAE59 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3FBB9B862938FF47000EAE59 /* Project object */;
 }

@@ -6,15 +6,21 @@
 //
 
 import Cocoa
+import Sparkle
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    @IBOutlet var checkForUpdatesMenuItem: NSMenuItem!
+    let updaterController: SPUStandardUpdaterController
     
-
+    override init() {
+        updaterController = SPUStandardUpdaterController(startingUpdater: true, updaterDelegate: nil, userDriverDelegate: nil)
+    }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        checkForUpdatesMenuItem.target = updaterController
+        checkForUpdatesMenuItem.action = #selector(SPUStandardUpdaterController.checkForUpdates(_:))
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
